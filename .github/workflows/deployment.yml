@@ -23,9 +23,6 @@ jobs:
     steps:
       - name: Checkout local repository
         uses: actions/checkout@v5
-        with:
-          path: ${{ github.workspace }}/${{ env.SERVICE_NAME }}
-          ref: ${{ inputs.git_ref }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
